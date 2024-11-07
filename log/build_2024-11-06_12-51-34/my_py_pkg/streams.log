@@ -1,0 +1,25 @@
+[1.356s] Invoking command in '/home/jr/ros2_ws/build/my_py_pkg': LD_LIBRARY_PATH=/home/jr/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jr/ros2_ws/build/my_py_pkg/build --no-deps symlink_data --force
+[1.926s] running develop
+[2.290s] running egg_info
+[2.290s] writing my_py_pkg.egg-info/PKG-INFO
+[2.292s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[2.292s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[2.292s] writing requirements to my_py_pkg.egg-info/requires.txt
+[2.292s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[2.297s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.297s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.299s] running build_ext
+[2.299s] Creating /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[2.301s] Installing add_two_ints_server script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.301s] Installing hw_status_publisher script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.301s] Installing parameter_example script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.302s] Installing py_node script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.302s] Installing rectangle_server script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.302s] Installing robot_news_station script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.302s] Installing smartphone script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.303s] 
+[2.303s] Installed /home/jr/ros2_ws/build/my_py_pkg
+[2.303s] running symlink_data
+[2.303s] symbolically linking /home/jr/ros2_ws/build/my_py_pkg/resource/my_py_pkg -> /home/jr/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[2.303s] symbolically linking /home/jr/ros2_ws/build/my_py_pkg/package.xml -> /home/jr/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[2.350s] Invoked command in '/home/jr/ros2_ws/build/my_py_pkg' returned '0': LD_LIBRARY_PATH=/home/jr/ros2_ws/install/my_robot_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jr/ros2_ws/build/my_py_pkg/build --no-deps symlink_data --force

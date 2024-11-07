@@ -1,0 +1,35 @@
+[0.613s] Invoking command in '/home/jr/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/jr/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/jr/ros2_ws/install/my_robot_interfaces
+[0.832s] -- The C compiler identification is GNU 11.4.0
+[1.030s] -- The CXX compiler identification is GNU 11.4.0
+[1.061s] -- Detecting C compiler ABI info
+[1.195s] -- Detecting C compiler ABI info - done
+[1.217s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.218s] -- Detecting C compile features
+[1.220s] -- Detecting C compile features - done
+[1.234s] -- Detecting CXX compiler ABI info
+[1.378s] -- Detecting CXX compiler ABI info - done
+[1.400s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.401s] -- Detecting CXX compile features
+[1.404s] -- Detecting CXX compile features - done
+[1.421s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.734s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.994s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[1.995s]   By not providing "Findrosidl_default_generetors.cmake" in CMAKE_MODULE_PATH
+[1.995s]   this project has asked CMake to find a package configuration file provided
+[1.995s]   by "rosidl_default_generetors", but CMake did not find one.
+[1.995s] 
+[1.995s]   Could not find a package configuration file provided by
+[1.995s]   "rosidl_default_generetors" with any of the following names:
+[1.996s] 
+[1.996s]     rosidl_default_generetorsConfig.cmake
+[1.996s]     rosidl_default_generetors-config.cmake
+[1.996s] 
+[1.996s]   Add the installation prefix of "rosidl_default_generetors" to
+[1.996s]   CMAKE_PREFIX_PATH or set "rosidl_default_generetors_DIR" to a directory
+[1.996s]   containing one of the above files.  If "rosidl_default_generetors" provides
+[1.997s]   a separate development package or SDK, be sure it has been installed.
+[1.997s] 
+[1.997s] [0m
+[1.997s] -- Configuring incomplete, errors occurred!
+[1.997s] See also "/home/jr/ros2_ws/build/my_robot_interfaces/CMakeFiles/CMakeOutput.log".
+[2.002s] Invoked command in '/home/jr/ros2_ws/build/my_robot_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/jr/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/jr/ros2_ws/install/my_robot_interfaces

@@ -1,0 +1,4 @@
+Invoking command in '/home/jr/ros2_ws/build/my_mvsim_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/jr/ros2_ws/build/my_mvsim_pkg -- -j6 -l6
+Invoked command in '/home/jr/ros2_ws/build/my_mvsim_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/jr/ros2_ws/build/my_mvsim_pkg -- -j6 -l6
+Invoking command in '/home/jr/ros2_ws/build/my_mvsim_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/jr/ros2_ws/build/my_mvsim_pkg
+Invoked command in '/home/jr/ros2_ws/build/my_mvsim_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/jr/ros2_ws/build/my_mvsim_pkg

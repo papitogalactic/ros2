@@ -1,0 +1,26 @@
+[0.020s] Invoking command in '/home/jr/ros2_ws/build/my_mvsim_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/jr/ros2_ws/build/my_mvsim_pkg -- -j6 -l6
+[0.079s] Invoked command in '/home/jr/ros2_ws/build/my_mvsim_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/jr/ros2_ws/build/my_mvsim_pkg -- -j6 -l6
+[0.137s] Invoking command in '/home/jr/ros2_ws/build/my_mvsim_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/jr/ros2_ws/build/my_mvsim_pkg
+[0.148s] -- Install configuration: ""
+[0.149s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//config
+[0.149s] -- Installing: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//config/mvsim_ros2_params.yaml
+[0.149s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//rviz
+[0.150s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//rviz/demo_depth_camera_ros2.rviz
+[0.150s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//worlds
+[0.150s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg//worlds/demo_elevation_map.world.xml
+[0.150s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/ament_index/resource_index/package_run_dependencies/my_mvsim_pkg
+[0.150s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/ament_index/resource_index/parent_prefix_path/my_mvsim_pkg
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/environment/ament_prefix_path.sh
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/environment/ament_prefix_path.dsv
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/environment/path.sh
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/environment/path.dsv
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/local_setup.bash
+[0.151s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/local_setup.sh
+[0.152s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/local_setup.zsh
+[0.152s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/local_setup.dsv
+[0.152s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/package.dsv
+[0.152s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/ament_index/resource_index/packages/my_mvsim_pkg
+[0.152s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/cmake/my_mvsim_pkgConfig.cmake
+[0.153s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/cmake/my_mvsim_pkgConfig-version.cmake
+[0.153s] -- Up-to-date: /home/jr/ros2_ws/install/my_mvsim_pkg/share/my_mvsim_pkg/package.xml
+[0.156s] Invoked command in '/home/jr/ros2_ws/build/my_mvsim_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/jr/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/jr/ros2_ws/build/my_mvsim_pkg

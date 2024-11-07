@@ -1,0 +1,41 @@
+[1.438s] Invoking command in '/home/jr/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jr/ros2_ws/build/my_py_pkg/build
+[2.023s] running develop
+[2.470s] Invoked command in '/home/jr/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jr/ros2_ws/build/my_py_pkg/build
+[2.473s] Invoking command in '/home/jr/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/jr/ros2_ws/build/my_py_pkg/build install --record /home/jr/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data --force
+[3.046s] running egg_info
+[3.048s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[3.048s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[3.049s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[3.049s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[3.049s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[3.055s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.057s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.057s] running build
+[3.057s] running build_py
+[3.057s] copying my_py_pkg/smartphone.py -> /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[3.058s] copying my_py_pkg/my_first_node.py -> /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[3.058s] copying my_py_pkg/robot_news_station.py -> /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[3.058s] running install
+[3.058s] running install_lib
+[3.060s] copying /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[3.062s] copying /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[3.063s] copying /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[3.063s] copying /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[3.063s] copying /home/jr/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[3.063s] byte-compiling /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-310.pyc
+[3.063s] byte-compiling /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc
+[3.063s] byte-compiling /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc
+[3.064s] byte-compiling /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[3.064s] byte-compiling /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-310.pyc
+[3.065s] running install_data
+[3.065s] copying resource/my_py_pkg -> /home/jr/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[3.068s] copying package.xml -> /home/jr/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[3.068s] running install_egg_info
+[3.068s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[3.073s] running install_scripts
+[3.118s] Installing add_two_ints_server script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[3.119s] Installing py_node script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[3.119s] Installing robot_news_station script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[3.119s] Installing smartphone script to /home/jr/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[3.120s] writing list of installed files to '/home/jr/ros2_ws/build/my_py_pkg/install.log'
+[3.166s] Invoked command in '/home/jr/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/jr/ros2_ws/build/my_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jr/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/jr/ros2_ws/build/my_py_pkg/build install --record /home/jr/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed install_data --force
