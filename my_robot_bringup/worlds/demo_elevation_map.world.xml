@@ -59,7 +59,7 @@
 	<!-- =============================
 		   Vehicle classes definition
 	     ============================= -->
-	<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/jackal.vehicle.xml"
+	<include file="jackal.vehicle.xml"
 		default_sensors="false"
 	/>
 
@@ -71,7 +71,7 @@
 
 		<!-- Sensors -->
 
-		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/velodyne-vlp16.sensor.xml"
+		<include file="velodyne-vlp16.sensor.xml"
 		  sensor_x="0.15" sensor_y="0" sensor_z="0.38" sensor_yaw="0"
 		  sensor_std_noise="0.005"
 		  sensor_publish="false"
@@ -81,13 +81,13 @@
 		  vert_resolution_factor="2.0"
 		/>
 
-		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/rgbd_camera.sensor.xml" 
+		<include file="rgbd_camera.sensor.xml" 
 		  sensor_x="0.22" sensor_z="0.29"
 		  sensor_period_sec="0.10"
 		  show_3d_pointcloud="false"
 		/>
 
-		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/gnss.sensor.xml"
+		<include file="gnss.sensor.xml"
 		  sensor_x="0.0"  sensor_y="0.0" sensor_z="0.25"
 		  sensor_period_sec="1.0"
 		  sensor_name="gps1"

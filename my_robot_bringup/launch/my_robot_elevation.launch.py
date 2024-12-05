@@ -8,15 +8,9 @@ from launch.actions import DeclareLaunchArgument
 from ament_index_python import get_package_share_directory
 import os
 
-
-mvsimDir = get_package_share_directory("mvsim")
-pkg_path = os.path.join(get_package_share_directory('my_robot_bringup'))
-
-MVSIM_WORLD_FILE = os.path.join(pkg_path, 'worlds','demo_elevation_map.world.xml')
-MVSIM_ROS2_PARAMS_FILE = os.path.join(mvsimDir, 'mvsim_tutorial',
-                                      'mvsim_ros2_params.yaml')
-RVIZ2_FILE = os.path.join(mvsimDir, 'mvsim_tutorial',
-                          'demo_depth_camera_ros2.rviz')
+MVSIM_WORLD_FILE = os.path.join(get_package_share_directory('my_robot_bringup'), 'worlds', 'demo_elevation_map.world.xml')
+MVSIM_ROS2_PARAMS_FILE = os.path.join(get_package_share_directory('my_robot_bringup'), 'worlds', 'mvsim_ros2_params.yaml')
+RVIZ2_FILE = os.path.join(get_package_share_directory('my_robot_bringup'), 'worlds', 'demo_depth_camera_ros2.rviz')
 
 
 def generate_launch_description():
