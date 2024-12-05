@@ -30,7 +30,7 @@
 	<element class='elevation_map'>
 		<!-- File can be an image or a .txt matrix -->
 		<resolution>0.5</resolution>
-		<elevation_image>/home/jr/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/worlds/elevation_mesh1.png</elevation_image>
+		<elevation_image>elevation_mesh1.png</elevation_image>
 		<elevation_image_min_z>-1.0</elevation_image_min_z>
 		<elevation_image_max_z>2.0</elevation_image_max_z>
 		
@@ -55,7 +55,7 @@
 	<!-- =============================
 		   Vehicle classes definition
 	     ============================= -->
-	<include file="../definitions/jackal.vehicle.xml"
+	<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/jackal.vehicle.xml"
 		default_sensors="false"
 	/>
 
@@ -67,7 +67,7 @@
 
 		<!-- Sensors -->
 
-		<include file="../definitions/velodyne-vlp16.sensor.xml"
+		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/velodyne-vlp16.sensor.xml"
 		  sensor_x="0.15" sensor_y="0" sensor_z="0.38" sensor_yaw="0"
 		  sensor_std_noise="0.005"
 		  sensor_publish="false"
@@ -77,7 +77,7 @@
 		  vert_resolution_factor="2.0"
 		/>
 		
-		<include file="../definitions/rgbd_camera.sensor.xml" 
+		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/rgbd_camera.sensor.xml" 
 		  sensor_x="0.22" sensor_z="0.29"
 		  sensor_period_sec="0.10"
 		  show_3d_pointcloud="false"
