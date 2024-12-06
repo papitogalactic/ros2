@@ -1,5 +1,9 @@
 <mvsim_world version="1.0">
-	<simul_timestep>0.003</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+	<!-- General simulation options -->
+	<!-- With ramps and elevation maps, it's better to manually set a small time step
+	     to improve the physics simulation and achieve more realistic frictions/sliding
+		 when on ramps -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
 
 	<!-- Define georeferenced coordinates to the world so GNSS/GPS sensors can be properly simulated -->
 	<georeference>
@@ -17,6 +21,8 @@
 		<cam_azimuth>150</cam_azimuth>
 		<cam_elevation>15</cam_elevation>
 		<fov_deg>80</fov_deg>
+		<cam_point_to>-5 -80 0</cam_point_to>
+		
 		<!-- <follow_vehicle>r1</follow_vehicle> -->
 	</gui>
 
@@ -42,8 +48,7 @@
 
 		<texture_extension_x>1.5</texture_extension_x>
 		<texture_extension_y>1.5</texture_extension_y>
-		<model_split_size>3.0</model_split_size> <!-- See docs. Required for correct z-order rendering if there are transparent objects in the world (e.g. trees with leaves) -->
-
+		
 		<mesh_color>#a0e0a0</mesh_color> <!-- Used only if mesh_image is not provided -->
 	</element>
 
@@ -59,7 +64,7 @@
 	<!-- =============================
 		   Vehicle classes definition
 	     ============================= -->
-	<include file="jackal.vehicle.xml"
+	<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/jackal.vehicle.xml"
 		default_sensors="false"
 	/>
 
@@ -67,11 +72,11 @@
 		   Vehicle(s) definition
 	     ======================== -->
 	<vehicle name="r1" class="jackal">
-		<init_pose>4 -8 0</init_pose>  <!-- In global coords: x,y, yaw(deg) -->
+		<init_pose>-5 -80 0</init_pose>  <!-- In global coords: x,y, yaw(deg) -->
 
 		<!-- Sensors -->
 
-		<include file="velodyne-vlp16.sensor.xml"
+		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/velodyne-vlp16.sensor.xml"
 		  sensor_x="0.15" sensor_y="0" sensor_z="0.38" sensor_yaw="0"
 		  sensor_std_noise="0.005"
 		  sensor_publish="false"
@@ -81,13 +86,13 @@
 		  vert_resolution_factor="2.0"
 		/>
 
-		<include file="rgbd_camera.sensor.xml" 
+		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/rgbd_camera.sensor.xml" 
 		  sensor_x="0.22" sensor_z="0.29"
 		  sensor_period_sec="0.10"
 		  show_3d_pointcloud="false"
 		/>
 
-		<include file="gnss.sensor.xml"
+		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/gnss.sensor.xml"
 		  sensor_x="0.0"  sensor_y="0.0" sensor_z="0.25"
 		  sensor_period_sec="1.0"
 		  sensor_name="gps1"
@@ -102,7 +107,6 @@
 	<!-- ======================================
 	      Obstacle blocks classes definition
 	     ====================================== -->
-    <!--
 	<block:class name="rock_01">
 		<static>true</static> 
 		<shape_from_visual/> 
@@ -141,14 +145,12 @@
 			<model_split_size>1.50</model_split_size> 
 		</visual>
 	</block:class>
-	-->
+	
 
 
 	<!-- ========================
 		Obstacle blocks
 	     ======================== -->
-    <!--
-
 	<variable name="ROCKS_SPREAD_X" value="35.0"></variable>
 	<variable name="ROCKS_SPREAD_Y" value="35.0"></variable>
 	<variable name="ROCKS_SPREAD_Z" value="1.0"></variable>
@@ -168,5 +170,5 @@
 			<init_pose3d>$f{(-0.5+rand())*TREES_SPREAD_X} $f{(-0.5+rand())*TREES_SPREAD_Y} $f{(-0.5+rand())*TREES_SPREAD_Z} $f{-180+rand()*360} 0 0</init_pose3d>
 		</block>
 	</for>
-    -->
+
 </mvsim_world>
