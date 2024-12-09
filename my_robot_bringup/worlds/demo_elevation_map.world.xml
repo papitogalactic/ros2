@@ -21,7 +21,7 @@
 		<cam_azimuth>150</cam_azimuth>
 		<cam_elevation>15</cam_elevation>
 		<fov_deg>80</fov_deg>
-		<cam_point_to>-5 -80 0</cam_point_to>
+		<cam_point_to>0 -40 0</cam_point_to>
 		
 		<!-- <follow_vehicle>r1</follow_vehicle> -->
 	</gui>
@@ -39,7 +39,7 @@
 	     ======================== -->
 	<element class='elevation_map'>
 		<!-- File can be an image or a .txt matrix -->
-		<resolution>0.5</resolution>
+		<resolution>0.25</resolution>
 		<elevation_image>elevation_mesh1.png</elevation_image>
 		<elevation_image_min_z>-1.0</elevation_image_min_z>
 		<elevation_image_max_z>2.0</elevation_image_max_z>
@@ -49,6 +49,9 @@
 		<texture_extension_x>1.5</texture_extension_x>
 		<texture_extension_y>1.5</texture_extension_y>
 		
+		<!-- JL: este flag se podrá activar cuando tengas MRPT>= 2.14.7 -->
+		<!-- <model_split_size>5.0</model_split_size> -->
+
 		<mesh_color>#a0e0a0</mesh_color> <!-- Used only if mesh_image is not provided -->
 	</element>
 
@@ -72,7 +75,7 @@
 		   Vehicle(s) definition
 	     ======================== -->
 	<vehicle name="r1" class="jackal">
-		<init_pose>-5 -80 0</init_pose>  <!-- In global coords: x,y, yaw(deg) -->
+		<init_pose>0 -40 0</init_pose>  <!-- In global coords: x,y, yaw(deg) -->
 
 		<!-- Sensors -->
 
