@@ -95,13 +95,14 @@
 		  show_3d_pointcloud="false"
 		/>
 
-		<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/gnss.sensor.xml"
+		<!-- GPS needs MVSIM>=0.12.0 -->
+		<!-- <include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/gnss.sensor.xml"
 		  sensor_x="0.0"  sensor_y="0.0" sensor_z="0.25"
 		  sensor_period_sec="1.0"
 		  sensor_name="gps1"
 		  sensor_horizontal_std_noise="1.5"
 		  sensor_vertical_std_noise="2.5"
-		  />
+		  /> -->
 
 	</vehicle>
 	
