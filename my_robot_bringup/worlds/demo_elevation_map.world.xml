@@ -16,8 +16,9 @@
 	<!-- GUI options -->
 	<gui>
 		<ortho>false</ortho>
-		<show_forces>false</show_forces>  <force_scale>0.01</force_scale>
-		<cam_distance>5</cam_distance>
+		<show_forces>false</show_forces> 
+		<force_scale>0.01</force_scale>
+		<cam_distance>30</cam_distance>
 		<cam_azimuth>150</cam_azimuth>
 		<cam_elevation>15</cam_elevation>
 		<fov_deg>80</fov_deg>
@@ -40,14 +41,14 @@
 	<element class='elevation_map'>
 		<!-- File can be an image or a .txt matrix -->
 		<resolution>0.25</resolution>
-		<elevation_image>elevation_mesh2.png</elevation_image>
+		<elevation_image>elevation_mesh3.png</elevation_image>
 		<elevation_image_min_z>-1.0</elevation_image_min_z>
-		<elevation_image_max_z>2.0</elevation_image_max_z>
+		<elevation_image_max_z>0.5</elevation_image_max_z>
 		
-		<texture_image>https://mrpt.github.io/mvsim-models/textures-cgbookcase/Pebbles02_512_BaseColor.png</texture_image>
+		<texture_image>texturas.png</texture_image>
 
-		<texture_extension_x>1.5</texture_extension_x>
-		<texture_extension_y>1.5</texture_extension_y>
+		<texture_extension_x>158</texture_extension_x>
+		<texture_extension_y>280</texture_extension_y>
 		
 		<!-- JL: este flag se podrá activar cuando tengas MRPT>= 2.14.7 -->
 		<!-- <model_split_size>5.0</model_split_size> -->
@@ -67,10 +68,17 @@
 	<!-- =============================
 		   Vehicle classes definition
 	     ============================= -->
+		 <!--  
 	<include file="$(ros2 pkg prefix mvsim)/share/mvsim/definitions/jackal.vehicle.xml"
 		default_sensors="false"
 	/>
+         -->
 
+	<include file="jackal.vehicle.xml"
+		
+	/>
+
+		 
 	<!-- ========================
 		   Vehicle(s) definition
 	     ======================== -->

@@ -32,30 +32,31 @@ class pure_pursuit(Node):
         if puntobuscado > 90:
             valorx=math.cos(puntobuscado*math.pi/180)
             valory=math.sin(puntobuscado*math.pi/180)
+            velocidadx=0.5+valory*3
 
             if valorx == 0.0:
                 valorx=0.001
 
-            velocidadangular=-0.5/(((valorx*valorx)+(valory*valory))/(2*valorx)) #pure pursuit
+            velocidadangular=-velocidadx/(((valorx*valorx)+(valory*valory))/(2*valorx)) #pure pursuit
         else :
             valorx=-math.cos(puntobuscado*math.pi/180)
             valory=math.sin(puntobuscado*math.pi/180)
-
+            velocidadx=0.5+valory*3
             if valorx == 0.0:
                 valorx=0.001
 
-            velocidadangular=0.5/(((valorx*valorx)+(valory*valory))/(2*valorx))  #pure pursuit
+            velocidadangular=velocidadx/(((valorx*valorx)+(valory*valory))/(2*valorx))  #pure pursuit
 
          
         self.get_logger().info(f'Rayo láser con mayor rango: índice={posiciones}, rango={max_range}, puntobuscado={puntobuscado}')
         # Publica el comando de velocidad angular
-        self.publicar_cmd_vel(velocidadangular)
+        self.publicar_cmd_vel(velocidadangular,velocidadx)
         
         
 
-    def publicar_cmd_vel(self, velocidadangular):
+    def publicar_cmd_vel(self, velocidadangular,velocidadx):
         cmd = Twist()
-        cmd.linear.x = 0.5                    # Velocidad lineal 
+        cmd.linear.x = velocidadx             # Velocidad lineal 
         cmd.angular.z = velocidadangular      # valocidad angular ajustada con pure pursuit
 
         # Publica el mensaje en cmd_vel
