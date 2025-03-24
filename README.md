@@ -8,3 +8,7 @@ de ROS2, se implementará una arquitectura modular donde cada nodo se encargará
 Este sistema servirá como base para futuras investigaciones y desarrollos en el ámbito de los vehículos autónomos y la robótica aplicada a la competición.
 
 Todo este proyecto de ha ejecutado desde Linux (Ubuntu 20.04 LTS) 
+
+
+https://github.com/user-attachments/assets/56637041-3cca-4e56-80a8-86ff82a2bd7f
+
